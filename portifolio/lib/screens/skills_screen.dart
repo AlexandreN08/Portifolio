@@ -94,6 +94,14 @@ class SkillsScreen extends StatelessWidget {
                 label: "GitHub",
                 imagePath: "assets/images/github.png",
               ),
+              SkillChip(
+                label: "PHP",
+                imagePath: "assets/images/php.png",
+              ),
+              SkillChip(
+                label: "Java",
+                imagePath: "assets/images/java.png",
+              ),
             ],
           ),
         ],

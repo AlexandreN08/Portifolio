@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFF3a6186), Color(0xFF89253e)], // degrade azul/roxo
+          colors: [Color.fromARGB(255, 42, 88, 148), Color.fromARGB(255, 148, 22, 13)], // degrade azul/roxo
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           // Foto
           ClipOval(
             child: Image.asset(
-              "assets/images/eu.jpeg",
+              "assets/images/eu2.jpeg",
               width: 200,
               height: 200,
               fit: BoxFit.cover,
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                 child: const Text("📂 Projetos"),
               ),
               ElevatedButton(
-                onPressed: () => _launchUrl("https://drive.google.com"), // link do CV
+                onPressed: () => _launchUrl("https://drive.google.com/file/d/1qgtG-o8_1n5Ovc3HBksbTduKIu8Y4__p/view?usp=sharing"), // link do CV
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   foregroundColor: Colors.black,
@@ -85,16 +85,18 @@ class HomeScreen extends StatelessWidget {
                 child: const Text("📄 Download CV"),
               ),
               ElevatedButton(
-                onPressed: () => _launchUrl("#contato"),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-                child: const Text("📬 Contato"),
-              ),
+  onPressed: () => _launchUrl(
+    "https://wa.me/5546999185491?text=Olá, Alexandre! Vim pelo seu portfólio 🚀",
+  ),
+  style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.white,
+    foregroundColor: Colors.black,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(20),
+    ),
+  ),
+  child: const Text("📬 Contato"),
+),
             ],
           ),
 
